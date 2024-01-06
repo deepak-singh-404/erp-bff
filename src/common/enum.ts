@@ -1,0 +1,8 @@
+export enum NODE_ENVIROMENTS {
+    DEVELOPMENT = "DEVELOPMENT",
+    PRODUCTION = "PRODUCTION"
+}
+
+export enum SERIAL_NUMBER_KEYS {
+    USER = "USER"
+}

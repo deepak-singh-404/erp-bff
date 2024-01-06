@@ -1,10 +1,14 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule, ConfigService } from "@nestjs/config";
+import { JwtModule } from "@nestjs/jwt";
 
 
 import properties from "config/properties";
 import { UserModule } from './modules/user/user.module';
+import { APP_FILTER } from '@nestjs/core';
+import { CustomExceptionFilter } from './filters/custom-exception.filter';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -24,9 +28,14 @@ import { UserModule } from './modules/user/user.module';
       inject: [ConfigService]
     }),
 
-    UserModule
+    JwtModule,
+    UserModule,
+    AuthModule
   ],
   controllers: [],
-  providers: [],
+  providers: [{
+    provide: APP_FILTER,
+    useClass: CustomExceptionFilter,
+  },],
 })
 export class AppModule { }

@@ -1,0 +1,28 @@
+export const API_MESSAGES = {
+    LOGIN_SUCESSFULLY: "Login successfully",
+    REGISTRATION_SUCCESSFUL: "Registration successful",
+    USER_NOT_FOUND: "User not found",
+    INVALID_CREDENTIALS: "Invalid credentials",
+    EMAIL_ALREADY_EXIST: "Email already exist",
+    SUCCESS: "success",
+    INVALID_TOKEN: "Invalid token",
+    USER_NOT_LOGGED_IN: "User not logged in",
+    BAD_REQUEST: "Bad request",
+    NOT_ALLOWED_BY_CORS: "Not allowed by cors",
+    SOMETHING_WENT_WRONG: "Something went wrong",
+    REQUIRED_FIEDS_ARE_MISSING: "Required fields are missing",
+    SEARCH_SERVICE_IS_UNAVAILABLE: "Search service is unavailable",
+    BRAND_NOT_FOUND: "Brand not found",
+    SINGUP_FAILED_DUE_TO_INTERNAL_ERROR: "Signup failed due to internal error",
+    USER_DETAILS_NOT_FOUND: "User details not found",
+    SESSION_MISMATCH: "Session mismatch",
+    DEVICEID_IS_MISSING: "DeviceId is missing",
+    BUILD_VERSION_IS_MISSING: "Build version is missing",
+    SAVED_SUCCESSFULLY: "Saved successfully",
+    FETCHED_SUCCESSFULLY: "Fetched successfully",
+    INVALID_USER: 'Invalid userid',
+    PLEASE_TRY_AGAIN_AFTER_SOMETIME: "Please try again after sometime",
+    UNAUTHENTICATED_REQUEST: "Unauthenticated request.",
+    NOT_FOUND: "Not found"
+};
+

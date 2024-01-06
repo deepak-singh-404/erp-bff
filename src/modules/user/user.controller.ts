@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Req, Res, HttpStatus } from '@nestjs/common';
 import { UserService } from './user.service';
-import { User } from '../../database/models/User.model';
+import { User } from '../../database/models/user.model';
 import { CreateUserDto } from './user.dto'; // Assuming the correct path
 
 @Controller('users')
